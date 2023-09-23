@@ -3,4 +3,4 @@ function resta (num1, num2){
     return operacion
 }
 
-module.exports= resta
+module.exports = resta()
