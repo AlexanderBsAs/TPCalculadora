@@ -1,5 +1,5 @@
 const fs = require('fs');
-const multiplicar=require("./multiplicar.js")
+const multiplicar=require("./data/multiplicar.js")
 // Registra una operación y su resultado en el archivo JSON
 const registro = {
  operacion: multiplicar,
