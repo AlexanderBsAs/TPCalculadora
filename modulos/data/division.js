@@ -10,5 +10,4 @@ function dividir(num1, num2){
             resultado = dividendo / divisor;
         } return resultado 
     }
-
-module.exports = dividir()
+module.exports = dividir
