@@ -1,0 +1,9 @@
+const fs = require('fs');
+// Registra una operación y su resultado en el archivo JSON
+const registro = {
+ operacion: 'multiplicar',
+ resultado: 10
+};
+fs.writeFileSync('registros.json', JSON.stringify(registro));
+// Muestra la operación y resultado en pantalla
+console.log('Operación: multiplicar, Resultado: 10');
