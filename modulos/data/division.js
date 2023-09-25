@@ -3,8 +3,8 @@ function dividir(num1, num2){
     let divisor = num2;
     let resultado
         if (divisor == 0){
-            console.log("No se puede dividir por 0")
-            return null
+           let mensaje= "No se puede dividir por 0"
+            return mensaje
         }
         else {
             resultado = dividendo / divisor;
