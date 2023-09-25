@@ -1,5 +1,5 @@
-function sumar (numeroA, numeroB){
-    return numeroA + numeroB
+function sumar (a, b){
+    return a + b
 }
 
 module.exports = sumar
