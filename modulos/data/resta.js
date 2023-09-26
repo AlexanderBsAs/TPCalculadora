@@ -1,6 +1,9 @@
-function resta (num1, num2){
-    let operacion = num1 - num2
-    return operacion
+function resta (...args){
+    
+    return args.reduce(function(acum,elem){
+        return acum - elem
+    })
+    
 }
 
 module.exports = resta
