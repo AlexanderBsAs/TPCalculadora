@@ -4,7 +4,7 @@ let sumar=require("./suma")
 let dividir=require("./division")
 let restar=require("./resta")
 
-let leer =fs.readFileSync(__dirname+"/registros2.json","utf-8")
+let leer =fs.readFileSync(__dirname+"/registros.json","utf-8")
 
 /* const registro = {
     operacion: 'suma',
@@ -34,7 +34,7 @@ args=variables2
             resultado: sumar(...args)
            }
            parse.push(registro)
-           fs.writeFileSync('registros2.json',JSON.stringify(parse))
+           fs.writeFileSync('registros.json',JSON.stringify(parse))
           
             console.log('Operación:'+ " Sumar " +'registro: resultado '+ sumar(...args))
           break;
@@ -45,7 +45,7 @@ args=variables2
               resultado: restar(...args)
              }
              parse.push(registro)
-             fs.writeFileSync('registros2.json',JSON.stringify(parse))
+             fs.writeFileSync('registros.json',JSON.stringify(parse))
              console.log('Operación:'+ " Restar " +'registro: resultado '+ restar(...args)) 
             break;
             case "multiplicar":
@@ -54,7 +54,7 @@ args=variables2
                 resultado: multiplicar(...args)
                }
                parse.push(registro)
-               fs.writeFileSync('registros2.json',JSON.stringify(parse))
+               fs.writeFileSync('registros.json',JSON.stringify(parse))
                console.log('Operación:'+ " Multiplicar " +'registro: resultado '+ multiplicar(...args));
                break;
                 case "division":
@@ -63,7 +63,7 @@ args=variables2
                     resultado: dividir(...args)
                    }
                    parse.push(registro)
-                   fs.writeFileSync('registros2.json',JSON.stringify(parse))
+                   fs.writeFileSync('registros.json',JSON.stringify(parse))
                    console.log('Operación:'+ " DIVISION " +'registro: resultado '+ dividir(...args))
                    break;
                     ;
